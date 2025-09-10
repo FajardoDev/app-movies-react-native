@@ -14,10 +14,19 @@ export default function MovieDescription({ movie }: Props) {
 				<Text> - {movie.genres.join(", ")}</Text>
 			</View>
 
-			<Text className="font-bold mt-5 text-slate-600 text-2xl">Historia</Text>
-			<Text className="font-normal mt-2 text-justify">{movie.description}</Text>
+			{movie.description && (
+				<>
+					<Text className="font-semibold mt-5 text-slate-600 text-xl">
+						Historia
+					</Text>
 
-			<Text className="font-bold mt-3 text-2xl text-slate-600">
+					<Text className="font-normal mt-2 text-justify">
+						{movie.description}
+					</Text>
+				</>
+			)}
+
+			<Text className="font-semibold mt-3 text-xl text-slate-600">
 				Presupuesto: {Formatter.currency(movie.budget)}
 			</Text>
 		</View>

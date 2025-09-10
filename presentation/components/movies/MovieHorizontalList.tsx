@@ -46,7 +46,7 @@ export default function MovieHorizontalList({
 		isLoading.current = true;
 		console.log("Cargar siguientes peliculas");
 
-		loadNextPage && loadNextPage();
+		loadNextPage && loadNextPage(); // Si hay un valor ejacuta la fn
 
 		// isLoading.current = false;
 	};

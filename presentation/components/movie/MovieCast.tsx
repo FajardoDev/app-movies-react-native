@@ -10,7 +10,7 @@ interface Props {
 export default function MovieCast({ cast }: Props) {
 	return (
 		<View className="mt-5 mb-20">
-			<Text className="font-semibold text-2xl px-5 mb-3 text-slate-700">
+			<Text className="font-semibold text-xl px-5 mb-3 text-slate-700">
 				Actores
 			</Text>
 			<FlatList

@@ -57,10 +57,10 @@ export default function MovieHeader({ originalTitle, poster, title }: Props) {
 				</View>
 			</View>
 			<View className="px-5 mt-5">
-				<Text className="font-normal text-slate-500 text-xl mb-1">
+				<Text className="font-normal text-slate-500 text-lg mb-1">
 					{originalTitle}
 				</Text>
-				<Text className="font-semibold text-slate-600 text-3xl">{title}</Text>
+				<Text className="font-semibold text-slate-600 text-xl">{title}</Text>
 			</View>
 		</>
 	);

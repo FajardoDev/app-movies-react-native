@@ -37,10 +37,10 @@ const MainSlideshow = ({ movies }: Props) => {
 					alignItems: "center",
 				}}
 				mode="parallax"
-				modeConfig={{
-					parallaxScrollingScale: 0.9,
-					parallaxScrollingOffset: 50,
-				}}
+				// modeConfig={{
+				// 	parallaxScrollingScale: 0.9,
+				// 	parallaxScrollingOffset: 50,
+				// }}
 				defaultIndex={1}
 			/>
 			{/* <Text>Hola Mund!!!</Text> */}

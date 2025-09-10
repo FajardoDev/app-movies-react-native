@@ -8,7 +8,10 @@ import { useMovies } from "@/presentation/hooks/useMovies";
 export default function PantallaInicio() {
 	const { nowPlayingQuery, popularQuery, UpcomingQuery, topRatedQuery } =
 		useMovies();
-	const safeArea = useSafeAreaInsets();
+
+	const safeArea = useSafeAreaInsets(); // No sobreescribe ningún espacio
+
+	// "react-native-reanimated": "~3.17.4",
 
 	// Loading
 	if (nowPlayingQuery.isLoading) {
@@ -25,8 +28,8 @@ export default function PantallaInicio() {
 	return (
 		<ScrollView>
 			<View className="mt-4 pb-10" style={{ paddingTop: safeArea.top }}>
-				<Text className="text-3xl font-bold px-4 mb-2 text-slate-700">
-					Movie App
+				<Text className="text-2xl font-bold px-4 mb-2 text-slate-600">
+					Movie Plus App
 				</Text>
 
 				{/* Carrousel de Imagenes */}

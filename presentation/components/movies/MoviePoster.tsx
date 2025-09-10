@@ -21,7 +21,7 @@ export default function MoviePoster({
 		>
 			<Image
 				source={{ uri: poster }}
-				className="shadow-lg rounded-2xl w-full h-full"
+				className="shadow-lg rounded-2xl shadow-black w-full h-full"
 				style={{
 					width: smallPoster ? 85 : 150,
 					height: smallPoster ? 130 : 250,
